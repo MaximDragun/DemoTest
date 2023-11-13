@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: ${MONGO_AUTH_DB:admin}
+      username: ${MONGO_USER:rootuser}
+      password: ${MONGO_PASSWORD:rootpass}
+      database: ${MONGO_DATABASE:document}
+      port: ${MONGO_PORT:27017}
+      host: ${MONGO_DB_URL:localhost}
+      auto-index-creation: true
+app:
+  document:
+    path:
+      applicationforbrokerageservice: classpath:Application_for_brokerage_service.docx
